@@ -1,0 +1,35 @@
+.auth-page{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 60px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	h1{
+		margin: 0;
+	}
+	form{
+		max-width: 380px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: 50px;
+		input, button{
+			width: 100%;
+			padding: 0 10px;
+			font-size: 16px;
+			display: block;
+			height: 35px;
+		}
+		button{
+			cursor: pointer;
+		}
+	}
+	p{
+		color: rgb(255, 56, 56);
+	}
+}
