@@ -3,7 +3,7 @@ import "./HomePage.scss"
 import { useState, useEffect } from "react"
 import { getNews } from "../../services/server"
 import { formatedDate } from "../../services/service.js"
-import { pictureDiscord, pictureTelegram } from "../../services/images.js"
+import { pictureDiscord, pictureTelegram, iconDiscord, iconTelegram } from "../../services/images.js"
 
 const HomePage = () => {
 
@@ -63,8 +63,8 @@ const HomePage = () => {
 					</div>
 				</div>
 				<div className="home__hots row">
-					<a href=""></a>
-					<a href=""></a>
+					<a href="https://t.me/terraria_forze"><img src={iconDiscord} alt="iconDiscord" /></a>
+					<a href="https://discord.gg/TP5apEQMMD"><img src={iconTelegram} alt="iconTelegram" /></a>
 				</div>
 			</section>
 		</main>

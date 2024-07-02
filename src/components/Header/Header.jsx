@@ -26,7 +26,7 @@ const Header = ({ menuState, user }) => {
 							</div>
 							<Link to="/profile" className="header__profile-user nav-link row">
 								<img src={iconUser} alt="player" />
-								<span>{user.username}</span>
+								<span>{user.username.length > 10 ? user.username.substring(0, 8) + "..." : user.username}</span>
 							</Link>
 						</div> : <Link to="/auth" className="nav-link log-btn">Увійти</Link>
 					}
