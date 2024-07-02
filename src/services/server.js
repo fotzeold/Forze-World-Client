@@ -1,4 +1,4 @@
-const URL = "http://202.181.188.133:3000/"
+const URL = "https://server.forze-coin.space/"
 
 async function loginUser(user) {
 	try {
