@@ -22,7 +22,6 @@ const HomePage = () => {
 			<section className="home">
 				<div className="container">
 					<div className="home__wrapper row">
-						<div className="test"></div>
 						{
 							newsList.length > 0 && <div className="home__news">
 								<h1>Новини</h1>
