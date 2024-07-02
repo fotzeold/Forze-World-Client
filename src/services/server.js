@@ -1,4 +1,4 @@
-const URL = "http://localhost:5000/"
+const URL = "http://202.181.188.133:3000/"
 
 async function loginUser(user) {
 	try {
