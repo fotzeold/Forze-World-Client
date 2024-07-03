@@ -5,6 +5,8 @@ import AuthPage from "../AuthPage/AuthPage"
 import ProfilePage from "../ProfilePage/ProfilePage"
 import ShopPage from "../ShopPage/ShopPage"
 import WikiPage from "../WikiPage/WikiPage"
+import RulesPage from "../RulesPage/RulesPage"
+import AdminPage from "../AdminPage/AdminPage"
 
 import { useState } from "react"
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -22,6 +24,8 @@ const App = () => {
 				<Route path="/shop" element={<ShopPage />} />
 				<Route path="/wiki" element={<WikiPage />} />
 				<Route path="/auth" element={<AuthPage userControll={{ user, setUser }} />} />
+				<Route path="/rules" element={<RulesPage />} />
+				<Route path="/admin" element={<AdminPage />} />
 			</Routes>
 			<Navigation menuState={{ activeMenu, setActiveMenu }} userControll={{ user, setUser }} />
 		</BrowserRouter>

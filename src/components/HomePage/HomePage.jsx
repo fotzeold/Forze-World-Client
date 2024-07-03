@@ -3,7 +3,12 @@ import "./HomePage.scss"
 import { useState, useEffect } from "react"
 import { getNews } from "../../services/server"
 import { formatedDate } from "../../services/service.js"
-import { pictureDiscord, pictureTelegram, iconDiscord, iconTelegram } from "../../services/images.js"
+import {
+	pictureDiscord,
+	pictureTelegram,
+	iconDiscord,
+	iconTelegram,
+} from "../../services/images.js"
 
 const HomePage = () => {
 
@@ -47,13 +52,13 @@ const HomePage = () => {
 							</div>
 						}
 						<div className="home__ads">
-							<a href="#" className="home__ads-item">
+							<a href="https://t.me/terraria_forze" className="home__ads-item">
 								<h2>Телеграм</h2>
 								<img src={pictureTelegram} alt="pictureTelegram" />
 								<h3>Terroristy</h3>
 								<p>Заходь у наш телеграм, тут ми спілкуємось та весело проводимо час.</p>
 							</a>
-							<a href="#" className="home__ads-item">
+							<a href="https://discord.gg/TP5apEQMMD" className="home__ads-item">
 								<h2>Діскорд</h2>
 								<img src={pictureDiscord} alt="pictureDiscord" />
 								<h3>Terroristy</h3>
@@ -63,8 +68,8 @@ const HomePage = () => {
 					</div>
 				</div>
 				<div className="home__hots row">
-					<a href="https://t.me/terraria_forze"><img src={iconDiscord} alt="iconDiscord" /></a>
-					<a href="https://discord.gg/TP5apEQMMD"><img src={iconTelegram} alt="iconTelegram" /></a>
+					<a href="https://t.me/terraria_forze"><img src={iconTelegram} alt="iconTelegram" /></a>
+					<a href="https://discord.gg/TP5apEQMMD"><img src={iconDiscord} alt="iconDiscord" /></a>
 				</div>
 			</section>
 		</main>
