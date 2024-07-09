@@ -11,50 +11,6 @@ section.home{
 	h1{
 		height: 42.4px;
 	}
-	.home__news-post{
-		color: rgb(255, 255, 255);
-		background: #751DC6;
-		padding: 15px;
-		border-radius: 10px;
-		h2{
-			margin-bottom: 20px;
-			font-size: 26px;
-		}
-
-		h3{
-			margin-bottom: 15px;
-			font-size: 22px;
-		}
-		p, a, ul, ol, span{
-			font-size: 16px;
-			color: rgb(255, 255, 255);
-			line-height: 22px;
-		}
-		p{
-			margin: 15px 0;
-		}
-
-		ul, ol{
-			padding-left: 25px;
-			margin: 10px 0;
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-		}
-		.post__content-footer{
-			margin-top: 25px;
-			justify-content: space-between;
-			font-weight: 700;
-		}
-		figure{
-			background: white;
-			color: #241631;	
-			width: fit-content;
-			padding: 4px 10px;
-			border-radius: 15px;
-			margin-bottom: 15px;
-		}
-	}
 	.home__ads{
 		display: flex;
 		flex-direction: column;

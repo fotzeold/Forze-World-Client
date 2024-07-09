@@ -1,0 +1,28 @@
+.admin__menu{
+	.admin__menu-wrapper{
+		flex-direction: column;
+		gap: 10px;	
+		.admin__menu-item{
+			background: #751DC6;
+			padding: 10px 15px;
+			border-radius: 10px;
+		}
+		.row{
+			align-items: center;
+			justify-content: space-between;
+			gap: 10px;
+		}
+		.nav-link{
+			width: 130px;
+			text-align: center;
+			border-radius: 7px;
+			background: #241631;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+	p{
+		font-size: 22px;
+		color: white;
+	}
+}

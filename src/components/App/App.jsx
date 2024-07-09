@@ -25,7 +25,7 @@ const App = () => {
 				<Route path="/wiki" element={<WikiPage />} />
 				<Route path="/auth" element={<AuthPage userControll={{ user, setUser }} />} />
 				<Route path="/rules" element={<RulesPage />} />
-				<Route path="/admin" element={<AdminPage />} />
+				<Route path="/admin/*" element={<AdminPage user={user} />} />
 			</Routes>
 			<Navigation menuState={{ activeMenu, setActiveMenu }} userControll={{ user, setUser }} />
 		</BrowserRouter>

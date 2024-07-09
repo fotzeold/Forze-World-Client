@@ -2,7 +2,8 @@ import "./HomePage.scss"
 
 import { useState, useEffect } from "react"
 import { getNews } from "../../services/server"
-import { formatedDate } from "../../services/service.js"
+import NewsContent from "../NewsContent/NewsContent"
+
 import {
 	pictureDiscord,
 	pictureTelegram,
@@ -32,21 +33,7 @@ const HomePage = () => {
 								<h1>Новини</h1>
 								<div className="home__news-list">
 									{
-										newsList.map(post => {
-											return (
-												<div className="home__news-post" key={"post-" + post.id}>
-													<div className="post__content" dangerouslySetInnerHTML={{ __html: post.body }}></div>
-													<div className="post__content-footer row ">
-														<div className="post__author">
-															Автор: {post.author}
-														</div>
-														<div className="post__date">
-															{formatedDate(post.date)}
-														</div>
-													</div>
-												</div>
-											)
-										})
+										newsList.map(post => <NewsContent news={post} key={"post-" + post.id} />)
 									}
 								</div>
 							</div>
