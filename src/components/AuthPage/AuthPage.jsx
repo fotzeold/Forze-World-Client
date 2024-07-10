@@ -20,6 +20,7 @@ const AuthPage = ({ userControll }) => {
 		loginUser(formData).then(data => {
 			if (data.status) {
 				setUser(data.user)
+				localStorage.setItem("user-token", data.token)
 				navigate('/')
 			} else {
 				setMessage(data.message)

@@ -57,6 +57,14 @@ main::-webkit-scrollbar-thumb{
 	gap: 20px;
 }
 
+.btn{
+	border-radius: 7px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 15px;
+	border: none;
+}
+
 h1{
 	color: white;
 	font-size: 32px;

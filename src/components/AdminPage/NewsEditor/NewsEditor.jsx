@@ -2,14 +2,16 @@ import "./NewsEditor.scss"
 import 'react-loading-skeleton/dist/skeleton.css'
 
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import NewsContent from "../../NewsContent/NewsContent"
 import TextEditor from "../../TextEditor/TextEditor"
 import { postNews } from "../../../services/server";
 
-const NewsEditor = ({ user }) => {
+const NewsEditor = ({ user, newsControll }) => {
 	const [content, setContent] = useState("")
+
+	const { newsList, setNewsList } = newsControll
 
 	const onContentChange = (newContent) => {
 		setContent(newContent)
@@ -20,7 +22,13 @@ const NewsEditor = ({ user }) => {
 			author: "forzeold",
 			body: "<figure>Обнова</figure>" + content
 		}
-		postNews(newNews).then(data => console.log(data))
+
+		postNews(newNews).then(data => {
+			if (data && data.status) {
+				setNewsList(data.news)
+				window.alert("Новину опубліковано")
+			}
+		})
 	}
 
 	return (

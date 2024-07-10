@@ -1,7 +1,5 @@
 import "./HomePage.scss"
 
-import { useState, useEffect } from "react"
-import { getNews } from "../../services/server"
 import NewsContent from "../NewsContent/NewsContent"
 
 import {
@@ -11,18 +9,7 @@ import {
 	iconTelegram,
 } from "../../services/images.js"
 
-const HomePage = () => {
-
-	const [newsList, setNewsList] = useState([])
-
-	useEffect(() => {
-		getNews().then((data) => {
-			if (data.status) {
-				setNewsList(data.news)
-			}
-		})
-	}, [newsList])
-
+const HomePage = ({ newsList }) => {
 	return (
 		<main>
 			<section className="home">

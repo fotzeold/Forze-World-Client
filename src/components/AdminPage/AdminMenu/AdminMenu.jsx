@@ -14,7 +14,7 @@ const AdminMenu = () => {
 						<Link to="/admin/news-editor" className="nav-link">Добавити</Link>
 					</div>
 				</div>
-				<div className="admin__menu-item row">
+				{/* <div className="admin__menu-item row">
 					<p>Товари</p>
 					<div className="admin__menu-nav row">
 						<Link to="" className="nav-link">Переглянути</Link>
@@ -34,7 +34,7 @@ const AdminMenu = () => {
 						<Link to="" className="nav-link">Переглянути</Link>
 						<Link to="" className="nav-link">Добавити</Link>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	)
