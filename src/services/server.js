@@ -1,5 +1,5 @@
-// const URL = process.env.REACT_APP_SERVER_URL
-const URL = "http://localhost:5000/"
+const URL = process.env.REACT_APP_SERVER_URL
+
 async function loginUser(user) {
 	try {
 		let res = await fetch(URL + "users/login", {
