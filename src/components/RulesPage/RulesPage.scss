@@ -1,0 +1,43 @@
+.rules{
+	padding-bottom: 30px;
+	.rules__label{
+		position: relative;
+		color: white;
+		font-size: 22px;
+		background: #751DC6;
+		height: 45px;
+		line-height: 45px;
+		padding: 0 15px;
+		border-radius: 10px;
+		::after{
+			position: absolute;
+			right: 15px;
+			content: "\294D";
+		}
+	}
+	.rules__body{
+		height: 0;
+		padding: 0 15px;
+		opacity: 0;
+		position: relative;
+		padding-top: 10px;
+		z-index: -1;
+		color: white;
+		transition: all 0.4s, opacity 0.2s;
+		.rules__body-title{
+			font-size: 20px;
+		}
+		.rules__body-warn{
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.rules__body.active{
+		height: max-content;
+		padding-bottom: 30px;
+		opacity: 1;
+		position: relative;
+		z-index: 1;
+	}
+}
