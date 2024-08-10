@@ -13,6 +13,7 @@ import iconRules from "../img/icon/rules.svg";
 import iconShop from "../img/icon/shop.svg";
 import iconWiki from "../img/icon/wiki.svg";
 import iconLogin from "../img/icon/login.svg";
+import tapPig from "../img/picture/tap-coin/pig.png"
 
 export {
 	iconProfile,
@@ -28,5 +29,6 @@ export {
 	iconRules,
 	iconShop,
 	iconWiki,
-	iconLogin
+	iconLogin,
+	tapPig
 }

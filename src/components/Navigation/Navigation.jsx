@@ -10,6 +10,7 @@ import {
 	iconWiki,
 	iconLogin
 } from "../../services/images.js"
+import { PiGameController } from "react-icons/pi";
 import { Link } from "react-router-dom"
 
 const Navigation = ({ menuState, userControll }) => {
@@ -29,6 +30,7 @@ const Navigation = ({ menuState, userControll }) => {
 				<Link onClick={() => setActiveMenu(false)} to="/" className="nav-link"><img src={iconHome} alt="short-icon" /> <span>Головна</span></Link>
 				<Link onClick={() => setActiveMenu(false)} to="/profile" className="nav-link"><img src={iconProfile} alt="short-icon" /> <span>Профіль</span></Link>
 				<Link onClick={() => setActiveMenu(false)} to="/shop" className="nav-link"><img src={iconShop} alt="short-icon" /> <span>Магазин</span></Link>
+				<Link onClick={() => setActiveMenu(false)} to="/games" className="nav-link"><PiGameController /> <span>Міні ігри</span></Link>
 				<a target="blank" onClick={() => setActiveMenu(false)} href="http://s26.joinserver.xyz:25594" className="nav-link"><img src={iconMap} alt="short-icon" /> <span>Карта світу</span></a>
 				<Link onClick={() => setActiveMenu(false)} to="/rules" className="nav-link"><img src={iconRules} alt="short-icon" /> <span>Правила</span></Link>
 				<Link onClick={() => setActiveMenu(false)} to="/wiki" className="nav-link"><img src={iconWiki} alt="short-icon" /> <span>Вікі</span></Link>

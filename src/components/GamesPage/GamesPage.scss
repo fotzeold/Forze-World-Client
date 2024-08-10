@@ -1,0 +1,25 @@
+section.games{
+	.nav-link{
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid white;
+		border-radius: 10px;
+		padding: 15px;
+		transition: all 0.2s;
+		gap: 10px;
+		svg{
+			display: block;
+			width: 64px;
+			height: 64px;
+		}
+		p{
+			font-size: 18px;
+		}
+	}
+
+	.nav-link:hover{
+		transform: scale(1.05);
+	}
+}

@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "JetBrains Mono", monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "JetBrains Mono", monospace;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	flex-shrink: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-#root{
+#root {
 	max-width: 1920px;
 	margin: 0 auto;
 	width: 100%;
@@ -27,37 +27,37 @@ body {
 	background: #241631;
 }
 
-main::-webkit-scrollbar{
+main::-webkit-scrollbar {
 	width: 6px;
 	background: #241631;
 }
 
-main::-webkit-scrollbar-thumb{
-	background: #751DC6;
+main::-webkit-scrollbar-thumb {
+	background: #751dc6;
 }
 
-.container{
+.container {
 	max-width: 1300px;
 	padding: 0 10px;
-	margin:  0 auto;
+	margin: 0 auto;
 }
 
-.nav-link{
+.nav-link {
 	color: white;
 	text-decoration: none;
 }
 
-.row{
+.row {
 	display: flex;
 }
 
-.grid{
+.grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 }
 
-.btn{
+.btn {
 	border-radius: 7px;
 	height: 30px;
 	line-height: 30px;
@@ -65,17 +65,17 @@ main::-webkit-scrollbar-thumb{
 	border: none;
 }
 
-h1{
+h1 {
 	color: white;
 	font-size: 32px;
 	margin-bottom: 30px;
 }
 
-h1.colored{
+h1.colored {
 	color: lightgreen;
 }
 
-main{
+main {
 	padding-top: 35px;
 	height: calc(100vh - 67px);
 	overflow: hidden;
@@ -83,24 +83,24 @@ main{
 }
 
 @media all and (max-width: 768px) {
-	.container{
+	.container {
 		padding: 0;
 	}
-	main::-webkit-scrollbar{
+	main::-webkit-scrollbar {
 		width: 0px;
 		background: #241631;
 	}
-	
-	main::-webkit-scrollbar-thumb{
-		background: #751DC6;
+
+	main::-webkit-scrollbar-thumb {
+		background: #751dc6;
 	}
 }
 
 @supports (-webkit-touch-callout: none) {
 	body {
-	 min-height: 100dvh;
+		min-height: 100dvh;
 	}
-	main{
-	 height: calc(100dvh - 67px);
+	main {
+		height: calc(100dvh - 67px);
 	}
- }
+}

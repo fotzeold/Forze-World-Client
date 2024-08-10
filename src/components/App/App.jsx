@@ -7,6 +7,8 @@ import ShopPage from "../ShopPage/ShopPage"
 import WikiPage from "../WikiPage/WikiPage"
 import RulesPage from "../RulesPage/RulesPage"
 import AdminPage from "../AdminPage/AdminPage"
+import GamesPage from "../GamesPage/GamesPage"
+import TapCoin from "../AllGames/TapCoin/TapCoin"
 
 import { useState, useEffect } from "react"
 import { Route, Routes, BrowserRouter } from "react-router-dom";
@@ -36,6 +38,8 @@ const App = () => {
 				<Route path="/auth" element={<AuthPage userControll={{ user, setUser }} />} />
 				<Route path="/rules" element={<RulesPage />} />
 				<Route path="/admin/*" element={<AdminPage user={user} newsControll={{ newsList, setNewsList }} />} />
+				<Route path="/games" element={<GamesPage />} />
+				<Route path="/games/tap-frzc" element={<TapCoin />} />
 			</Routes>
 			<Navigation menuState={{ activeMenu, setActiveMenu }} userControll={{ user, setUser }} />
 		</BrowserRouter>
